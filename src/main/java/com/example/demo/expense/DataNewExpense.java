@@ -1,7 +1,12 @@
 package com.example.demo.expense;
 
-public record DataNewExpense(String expenseName,
+import jakarta.validation.constraints.NotNull;
+
+public record DataNewExpense(
+        String expenseName,
                              String expenseDate,
-                             Float value) {
+                             Float expenseValue,
+                             Categories categories
+                             ) {
 
 }
