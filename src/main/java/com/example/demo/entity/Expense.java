@@ -1,5 +1,7 @@
-package com.example.demo.expense;
+package com.example.demo.entity;
 
+import com.example.demo.expense.Categories;
+import com.example.demo.expense.DataNewExpense;
 import jakarta.persistence.*;
 import lombok.*;
 

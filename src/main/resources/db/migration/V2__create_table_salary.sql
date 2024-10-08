@@ -1,0 +1,5 @@
+CREATE TABLE salary (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    value DECIMAL(10, 2) NOT NULL,
+    recieved_date DATE NOT NULL
+);

@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.expense.DataNewExpense;
-import com.example.demo.expense.Expense;
+import com.example.demo.entity.Expense;
 import com.example.demo.expense.ExpenseRepository;
 import com.example.demo.expense.GetExpenseData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +24,6 @@ public class ExpenseController {
 
     @GetMapping
     public List<GetExpenseData> list(){
-        return repository.findAll().stream().map(GetExpenseData::new);
+        return repository.findAll().stream().map(GetExpenseData::new).toList();
     }
 }
