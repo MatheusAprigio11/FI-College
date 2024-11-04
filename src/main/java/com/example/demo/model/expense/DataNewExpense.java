@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public record  DataNewExpense(
         String expenseName,
-                             LocalDate expenseDate,
                              BigDecimal expenseValue,
                              Categories categories
                              ) {

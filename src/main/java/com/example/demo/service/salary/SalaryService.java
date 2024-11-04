@@ -7,6 +7,8 @@ import com.example.demo.entity.Salary;
 import com.example.demo.model.salary.SalaryModel;
 import com.example.demo.repository.SalaryRepository;
 
+import java.time.LocalDate;
+
 @Service
 public class SalaryService {
 
@@ -14,7 +16,7 @@ public class SalaryService {
     private SalaryRepository salaryRepository;
 
     public Salary saveSalary(SalaryModel salaryModel) {
-        var salary = Salary.builder().value(salaryModel.getValue()).recievedDate(salaryModel.getRecievedDate()).build();
+        var salary = Salary.builder().value(salaryModel.getValue()).recievedDate(LocalDate.now()).build();
         return salaryRepository.save(salary);
     }
 }

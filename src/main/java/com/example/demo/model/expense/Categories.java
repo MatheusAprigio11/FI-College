@@ -6,5 +6,6 @@ public enum Categories {
     ENTERTAINMENTS,
     SHOPPING,
     HEALTH,
-    BILLS
+    BILLS,
+    GAS
 }

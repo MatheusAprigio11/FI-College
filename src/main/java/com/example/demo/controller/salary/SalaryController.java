@@ -12,7 +12,7 @@ import com.example.demo.model.salary.SalaryModel;
 import com.example.demo.service.salary.SalaryService;
 
 @RestController
-@RequestMapping("/api/salary")
+@RequestMapping("/api/v1/salary")
 public class SalaryController {
 
     @Autowired
