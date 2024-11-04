@@ -1,6 +1,7 @@
-package com.example.demo.entity.salary;
+package com.example.demo.entity;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -24,6 +25,6 @@ public class Salary {
     private BigDecimal value;
 
     @Temporal(TemporalType.DATE)
-    private Date recievedDate;
+    private LocalDate recievedDate;
 
 }

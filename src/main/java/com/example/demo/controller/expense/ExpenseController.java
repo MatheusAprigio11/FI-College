@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package com.example.demo.controller.expense;
 
-import com.example.demo.expense.DataNewExpense;
+import com.example.demo.model.expense.DataNewExpense;
 import com.example.demo.entity.Expense;
-import com.example.demo.expense.ExpenseRepository;
-import com.example.demo.expense.GetExpenseData;
+import com.example.demo.repository.ExpenseRepository;
+import com.example.demo.model.expense.GetExpenseData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +19,7 @@ public class ExpenseController {
 
     @PostMapping
     public void newExpense(@RequestBody DataNewExpense data){
+
         repository.save(new Expense(data));
     }
 

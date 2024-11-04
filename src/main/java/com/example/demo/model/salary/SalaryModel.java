@@ -4,11 +4,12 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
 @Builder
 public class SalaryModel {
     private BigDecimal value;
-    private Date recievedDate;
+    private LocalDate recievedDate;
 }
